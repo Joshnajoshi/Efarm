@@ -1,0 +1,38 @@
+<div class="card">
+  <br>
+<h2 style="text-align:center">Login </h2>
+
+<form style="text-align:center">
+  <div class="imgcontainer">
+    <img src="/assets/img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Email : </b></label>&nbsp;
+    <input type="text" placeholder="Enter Username" name="uname"  [(ngModel)]="uname" required>
+<br>
+<br>
+    <label for="psw"><b>Password :</b></label>&nbsp;
+    <input type="password" placeholder="Enter Password" name="psw"  [(ngModel)]="psw" required><br>
+    <br>
+    <label for="t"><b>Type :</b></label>&nbsp;
+
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="farmer" [(ngModel)]="type">&nbsp;
+    <label class="form-check-label" for="inlineRadio1">Famer</label>&nbsp;
+    <input lass="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="bidder" [(ngModel)]="type">&nbsp;
+    <label class="form-check-label" for="inlineRadio2">Bidder</label>&nbsp;
+  <br>
+  <br>
+
+    <button type="submit" (click)="login()">Login</button>
+    <br>
+    <br>
+    <a [routerLink]="['/home']"><h4><b style="color:black; ">Back to Home Page</b></h4></a>
+    <div *ngIf="isError" class="alert alert-danger">
+     Invaild  Username | Password  
+    </div>
+
+
+ 
+</div>
+</form>

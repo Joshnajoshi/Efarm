@@ -1,0 +1,73 @@
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3{
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: black;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color:black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.resetbtn {
+  background-color:black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+  font-family: "Times New Roman", Times, serif;
+  
+}
+
+.resetrbtn:hover {
+  opacity: 1;
+}
+
+label{
+  width:150px;
+  font-family: "Times New Roman", Times, serif;
+}
+input{
+  width:300px;
+  font-family: "Times New Roman", Times, serif;
+}
+h4{
+  font-family: "Times New Roman", Times, serif;
+  margin-left:530px;
+}

@@ -1,0 +1,52 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-color: greenyellow;
+    border-radius: 2%;
+    background-color: lightyellow;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.contain {
+    position:relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+.mark{
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    margin: 2%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.content {
+    /* Setting text appearance */
+    font-family: "Montserrat", sans-serif;
+    font-size: 3vmin;
+    text-align: center;
+    color: black;
+    border-radius: 2%;
+    padding: 2rem;
+    margin: 2rem;
+    margin-top:5px;
+    position:absolute;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+img{
+    background-size:cover;
+    opacity:0.7;
+    overflow:visible;
+}

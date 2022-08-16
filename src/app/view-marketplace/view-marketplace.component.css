@@ -1,0 +1,66 @@
+
+.heading{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+.heading2{
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+.table1{
+    width: 100vh;
+    margin-left:20%;
+    font-family: "Times New Roman", Times, serif;
+}
+.table2{
+    width: 100vh;
+    margin-left:20%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Times New Roman", Times, serif;
+}
+th{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+body{
+    background-image: url('../../assets/wheat.jpg');
+}
+
+td{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+}
+label{
+    text-align: center;
+    margin-left:420px;
+    font-family: "Times New Roman", Times, serif;
+}
+button{
+    margin-left:530px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+h4{
+    font-family: "Times New Roman", Times, serif;
+    margin-left:530px;
+}

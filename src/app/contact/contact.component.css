@@ -1,0 +1,16 @@
+span{
+    font-size:large;
+    font-family: "Times New Roman", Times, serif;
+  }
+  div{
+    background-color:lightblue; 
+    width: 100%;
+    font-size:medium;
+    font-family: "Times New Roman", Times, serif;
+    font-size:large;
+  }
+    p{
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      font-size:large;
+    }

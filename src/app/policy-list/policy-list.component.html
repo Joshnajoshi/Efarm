@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Policy List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-sm table-dark table-fit">
+        <thead>
+          <tr>
+            <th scope="col">Policy Id</th>
+            <th scope="col">Season</th>
+            <th scope="col">year</th>
+            <th scope="col">Crop</th>
+            <th scope="col">Sum Insured</th>
+            <th scope="col">Area</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of policys | async" scope="row">
+            <td>{{ p.id }}</td>
+            <td>{{ p.season }}</td>
+            <td>{{ p.year }}</td>
+            <td>{{ p.crop }}</td>
+            <td>{{ p.sumInsured }}</td>
+            <td>{{ p.area }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <a [routerLink]="['/policy']"><h3><b style="color:black; ">Back</b></h3></a>

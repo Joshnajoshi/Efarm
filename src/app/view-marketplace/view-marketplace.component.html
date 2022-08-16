@@ -1,0 +1,46 @@
+<body>
+    <div class="col">
+       
+        <div class="form-row">
+            <div class="container"> 
+                    <div>
+                        <h3 class="heading2">Bid Info</h3> </div>
+                    <table class="table2">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Crop ID</th>
+                            <th>Crop Name</th>
+                            <th>Current Bid</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let c of crops | async" scope="row">
+                          <td>{{ c.id }}</td>
+                          <td>{{ c.cropName }}</td>
+                          <td>{{ c.price }}</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="bid"><b>Bid amount : </b></label>&nbsp;
+    <input type="text" placeholder="Enter bid amount" name="bid" [(ngModel)]="bid" required>
+    <br>
+    <br>
+    <button type="submit" (click)="changeBid()" >submit</button>
+    <br>
+    <br>
+    <a [routerLink]="['/bidderHome']"><h4><b style="color:black; ">Back</b></h4></a>
+    <br>
+    <br>
+    <br>
+    <br>
+
+       
+    </body>

@@ -1,0 +1,43 @@
+<div class="start">
+    <br><br>
+    <br>
+    <br>
+    
+    <h1 style="text-align:center">Place Sell Request</h1>
+<form>
+    <div style="text-align:center" class="container1">
+        <div class="input1">
+          
+         
+        <label  for="type"><b>Crop Type* :</b></label>
+        <input class="t1" name="type" [(ngModel)]="cropType"  placeholder="Crop Type"  type="text" name="type" id="type" required ><br/>
+<br>
+        <label  for="name"><b>Crop name* :</b></label>
+        <input class="t2" name="name" [(ngModel)]="name" placeholder="Crop Name"  type="text" name="name" id="name" required ><br/>
+        <br>
+        <label  for="fertilizer"><b>Fertilizer Type* :</b></label>
+        <input class="t3" name="fertilizer" [(ngModel)]="fertilizer" placeholder="Fertilizer Type"  type="text" name="fertilizer" id="fertilizer" required ><br/>
+        <br>
+        <label  for="quantity"><b>Quantity* :</b></label>
+        <input class="t4" name="quantity" [(ngModel)]="quantity" placeholder="Quantity"  type="text" name="quantity" id="quantity" required ><br/>
+        <br>
+        <label  for="quantity"><b>Price* :</b></label>
+        <input class="t4" name="price" [(ngModel)]="price" placeholder="price"  type="text" name="quantity" id="quantity" required ><br/>
+        <br>
+        <label  for="pH"><b>Soil pH * :</b></label>
+        <input class="t5" name="pH" [(ngModel)]="soilpH" placeholder=" Soil pH" type="text" name="pH" id="pH" required >
+        
+    <div class="button1">
+      <button type="submit" (click)="cellRegister()" class="request">Place Request</button>
+    </div>
+    <br>
+    <a [routerLink]="['/details']"><h4><b style="color:white; ">Back</b></h4></a>
+    <div *ngIf="error" class="alert alert-danger">
+      * mark fields are mandtory
+      </div>
+
+  </div>
+</div>
+</form>
+
+</div>

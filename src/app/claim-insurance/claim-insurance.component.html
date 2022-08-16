@@ -1,0 +1,42 @@
+<div class="start">
+  
+
+<form  style="background-image: url('../../assets/claim.jpg'); width: 100%; height: 100%;">
+  <br>
+  <br>
+  <br>
+  <h1 style="text-align:center">Claim Insurance</h1>  
+  <div style="text-align:center" class="container1">
+        <div class="input1">
+         
+        <label  for="policyNo"><b>Policy Number* :</b></label>
+        <input class="t1" name="policyNo" [(ngModel)]="policyNo"  placeholder="Policy Number"  type="text" name="policyNo" id="policyNo" required ><br/>
+        <br>
+        <label  for="company"><b>Insurance Company* :</b></label>
+        <input class="t2" name="company" [(ngModel)]="company" placeholder="Insurance Company"  type="text" name="company" id="company" required ><br/>
+        <br>
+        <label  for="name"><b>Name of Insuree* :</b></label>
+        <input class="t3" name="name" [(ngModel)]="name" placeholder="Name of Insuree"  type="text" name="name" id="name" required ><br/>
+        <br>
+        <label  for="sum insured"><b>Sum Insured* :</b></label>
+        <input class="t4" name="sum insured" [(ngModel)]="sumInsured" placeholder="Sum Insured"  type="text" name="sum insured" id="sum insured" required ><br/>
+        <br>
+        <label  for="cause"><b>Cause of Loss*:</b></label>
+        <input class="t5" name="cause" [(ngModel)]="cause" placeholder="Cause of Loss"  type="text" name="cause" id="cause" required ><br/>
+        <br>
+        <label  for="date"><b>Date of Loss *:</b></label>
+        <input class="t6" name="date" [(ngModel)]="date" placeholder=" Date of Loss" type="date" name="date" id="date" required ><br>        
+    <div class="button1">
+      <button type="submit" (click)="user3Register()" class="request">Submit</button>
+    </div>
+    <br>
+    <a [routerLink]="['/insurance']"><h4><b style="color:black; ">Back</b></h4></a>
+    <br>
+    <div *ngIf="error" class="alert alert-danger">
+      * mark fields are mandtory
+      </div>
+  </div>
+</div>
+
+</form>
+</div>

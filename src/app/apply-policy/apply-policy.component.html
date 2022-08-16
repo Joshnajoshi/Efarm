@@ -1,0 +1,41 @@
+<div class="start" style="background-image: url('../../assets/policy.jpg'); width: 100%; height: 100%;">
+    <form >
+      <br>
+      <br>
+      <h1 style="text-align:center">Application for Insurance</h1>  
+      <div style="text-align:center" class="container1">
+            <div class="input1">
+             
+             
+            <label  for="season"><b>Season* :</b></label>
+            <input class="t1" name="season" [(ngModel)]="season"  placeholder="Enter Season"  type="text" name="season" id="season" required ><br/>
+    <br>
+            <label  for="year"><b>Year* :</b></label>
+            <input class="t2" name="year" [(ngModel)]="year" placeholder="Year"  type="text" name="year" id="year" required ><br/>
+            <br>
+            <label  for="crop"><b>Crop* :</b></label>
+            <input class="t3" name="crop" [(ngModel)]="crop" placeholder="Crop"  type="text" name="crop" id="crop" required ><br/>
+            <br>
+            <label  for="sum insured"><b>Sum Insured* :</b></label>
+            <input class="t4" name="sum insured" [(ngModel)]="sumInsured" placeholder="Sum Insured"  type="text" name="sum insured" id="sum insured" required ><br/>
+            <br>
+            <label  for="area"><b>Area* :</b></label>
+            <input class="t5" name="area" [(ngModel)]="area" placeholder="Area"  type="text" name="area" id="area" required >
+            <br>
+               <div class="button1">
+        
+          <button type="submit" (click)="user4Register()" class="request">Submit</button>
+        <br>
+        <br>
+        <div *ngIf="error" class="alert alert-danger">
+          * mark fields are mandtory
+          </div>
+          <a [routerLink]="['/policyList']"><h3><b>Policies List</b></h3></a>
+          <br>
+          <a [routerLink]="['/insurance']"><h4><b style="color:black; ">Back</b></h4></a>
+        </div>
+      </div>
+    </div>
+    </form>
+    </div>
+    
